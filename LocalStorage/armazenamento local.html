@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        body {
+    background-color: rgb(0, 0, 0);
+}
+
+strong {
+   text-shadow: 1px 1px 1px rgb(8, 170, 16);
+}
+
+textarea {
+    box-shadow: 4px 4px 4px rgb(29, 28, 28);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(20, 19, 19);
+    border: none;
+    color: green;
+    font-size: 20px;
+}
+
+::placeholder {
+    color: rgb(2, 172, 30);
+    font-size: 22px;
+}
+
+input {
+    box-shadow: 4px 4px 4px black;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+legend {
+    color: green;
+}
+
+    </style>
+    <title>Local Storage</title>
+</head>
+
+<body>
+
+    <div style="text-align: center; margin-top: 130px; font-family: Arial, Helvetica, sans-serif;">
+        <legend>
+            <h2><strong>Armazenamento Local com Javascript</strong></h2>
+        </legend>
+        <label class="strong"><strong>Insira o que quer ser armazenado:</strong></label>
+        <input id="pegar_valores"><br><br>
+        <legend><strong>Registro de dados</strong></legend><br>
+        <textarea style="width: 430px; height: 200px; resize: none; outline: none;" id="log"
+            placeholder="aqui será o registro dos dados salvos no banco." readonly></textarea>
+        <br><br>
+        <div>
+            <button onclick="save_data()"><strong>salvar dados</strong></button>
+            <button onclick="delete_data()"><strong>apagar dados</strong></button>
+            <button onclick="delete_ls()"><strong>limpar banco</strong></button>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    // global variables
+let input = window.document.getElementById("pegar_valores").value;
+let log = window.document.getElementById("log").value;
+
+// save functions
+function save_data() {
+    // local variables
+    let input = window.document.getElementById("pegar_valores").value;
+    localStorage.setItem("dados armazenados de 127.0.0.1: ", input + "\n")
+    // internal function call
+    registrar()
+    send_message()
+    function send_message() {
+        window.alert("salvando no banco....")
+        window.alert("salvo com sucesso!")
+    } function registrar() {
+        // local variables
+        let information_saved = window.document.getElementById("pegar_valores").value;
+        log_data = window.document.getElementById("log").value = "dado armazenado em 127.0.0.1 no armazenamento local: " + information_saved + "\n";
+    }
+}
+
+// delete functions
+function delete_data() {
+    // local variables
+    window.document.getElementById("pegar_valores").value;
+    window.document.getElementById("log").value;
+    // internal function call
+    trash()
+    function trash() {
+        send_message()
+        window.document.getElementById("pegar_valores").value = "";
+        window.document.getElementById("log").value = "";
+        function send_message() {
+            return window.alert("dados removidos.")
+        }
+    }
+}
+
+function delete_ls() {
+    window.alert("limpando banco de dados...")
+    window.alert("banco de dados limpo")
+    localStorage.removeItem("dados armazenados de 127.0.0.1: ")
+}
+</script>
+
+</html>
