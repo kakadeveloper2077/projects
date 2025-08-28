@@ -1,0 +1,16 @@
+body {
+  background-color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  zoom: 250%;
+}
+body input {
+  padding: 10px;
+  box-shadow: 3px 3px 3px black;
+  outline: none;
+  border: none;
+}
+body button {
+  padding: 10px;
+  cursor: pointer;
+}/*# sourceMappingURL=index2.css.map */

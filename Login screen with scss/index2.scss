@@ -1,0 +1,23 @@
+$corfundo: blue;
+$zoom_page: 250%;
+$borda_espessura: 10px;
+$tamanho_msg: 90px;
+$borda_qualquer: 10px;
+$linha_fudida_remover: none;
+$borda_remover: none;
+
+body {
+  background-color: $corfundo;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  zoom: $zoom_page;
+  input {
+    padding: $borda_espessura;
+    box-shadow: 3px 3px 3px black;
+    outline: $linha_fudida_remover;
+    border: $borda_remover;
+  } button {
+        padding: $borda_espessura;
+        cursor: pointer;
+  } 
+}
