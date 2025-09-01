@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .project_acess {
+            text-decoration: none;
+            font-weight: bolder;
+            color: black;
+            background-color: grey;
+            padding: 8px;
+            outline: none;
+        }
+
+        .project_acess:hover {
+            background-color: rgb(168, 158, 158);
+        }
+
+        .skills {
+            text-align: center;
+        }
+
+        .info {
+            font-weight: bolder;
+        }
+
+        .header {
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+            box-sizing: border-box;
+        }
+
+
+
+        .descricao {
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        .nav {
+            text-decoration: none;
+            font-weight: bolder;
+            color: white;
+            margin: 10px;
+        }
+
+        .nav:hover {
+            color: rgb(206, 191, 191);
+        }
+    </style>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="logo">Kayky Antonio</h1>
+        <p class="descricao">Estudante de Análise e Desenvolvimento de Sistemas</p><br>
+        <header>
+            <nav>
+                <a class="nav" href="#about">Sobre mim</a>
+                <a class="nav" href="#projects">Projetos</a>
+                <a class="nav" href="#skills">Habilidades</a>
+            </nav>
+        </header>
+    </div>
+
+    <div class="box">
+        <div class="about">
+            <section id="about">
+                <h2>Sobre mim</h2>
+                <p class="info">Kayky começou no mundo da programação por volta dos 15 anos de idade. Hoje com seus 20
+                    anos cursa
+                    análise e desenvolvimento de sistemas, seu foco total é em desenvolvimento web.
+                </p>
+            </section>
+        </div>
+
+        <br><br><br>
+
+        <div class="projects">
+            <section id="projects">
+                <h2>Projetos</h2>
+                <h3>Conversor Decimal Binário</h3>
+                <p class="info">Um simples programa web que faz uma conversão pegando o que você colocar que sejam
+                    números decimais
+                    e/ou pelo teclado numérico
+                    e converte ele para um número binário, o sistema não mostra os outros zeros pela tabela ASCII, mas
+                    se consultado confirma os decimais
+                    em formato binário.
+                </p>
+                <a class="project_acess" href="../html/projects/decimal para binário.html" target="_blank">VER
+                    PROJETO</a>
+            </section>
+
+            <br><br><br>
+
+            <section id="projects">
+                <h3>Gerador de Palavras</h3>
+                <p class="info">Um programa web que tem uma interface com 2 botões, 2 campos de texto um campo de texto
+                    enorme, o
+                    campo de texto enorme fica responsável pela exibição, sendo o display, os botão, ação de gerar as
+                    mensagens de acordo com a quantidade de vezes + a mensagem definida, e o outro para exibir
+                    informações
+                    adicionais para ajudar quem for fazer o uso.
+                </p>
+                <a class="project_acess" href="../html/projects/word generator.html" target="_blank">VER PROJETO</a>
+            </section>
+        </div>
+
+        <br><br><br>
+
+        <div class="skills">
+            <section id="skills">
+                <h2>Habilidades</h2>
+                <img src="../images/html.png" alt="html image">
+                <img src="../images/css.png" alt="css image">
+                <img src="../images/javascript.png" alt="javascript image"><br>
+                <img src="../images/nodejs.png" alt="nodejs image">
+                <img src="../images/react.png" alt="react image">
+                <img src="../images/sass.png" alt="sass image"><br>
+                <img src="../images/sql.png" alt="sql image">
+                <img src="../images/canva.png" alt="canva image">
+            </section>
+        </div>
+
+        <br><br><br>
+
+    </div>
+</body>
+
+</html>
