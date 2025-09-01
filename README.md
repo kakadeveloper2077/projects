@@ -1,4 +1,4 @@
-📜 Projects:
-  🔄 Decimal to Binary Converter.
-  💬 Word Generator.
+📜 Projects: <br>
+  🔄 Decimal to Binary Converter.<br>
+  💬 Word Generator.<br>
   📄 Portfolio
